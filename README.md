@@ -1,3 +1,14 @@
+# Personal notes:
+
+Needs data pre-processing
+
+"Pre-processing: We pre-process English tweets using the NLTK (Twitter mode), for treatment of URLs, identifiers (@) and hashtags (#). We adopt the Bert Tokenizer for tokenization of tweets. For the English tweets, we use the pre-trained BERT- base-cased8 model. For the Chinese news, we adopt the Chinese-BERT-base8 model, having 12 layers and 110M parameters. We use character- based tokenization for the Chinese headlines. We collect prices from Yahoo Finance.9 We align trading days by dropping data samples that do not possess tweets for a consecutive 7-day window, and further align the data across windows for stocks to ensure that data is available for all days in the window for the same set of stocks. We split the US S&P 500 dataset temporally based on date ranges from January 01, 2014 to July 31, 2015 for training, August 01, 2015 to September 30, 2015 for validation, and October 01, 2015 to January 01, 2016 for testing. We split the China & Hong Kong dataset temporally based on date ranges from January 01, 2015 to August 31, 2015 for training, September 01, 2015 to September 30, 2015 for validation, and October 01, 2015 to January 01, 2016 for testing all models and experiments."
+
+
+
+
+
+
 # Quantitative Day Trading from Natural Language using Reinforcement Learning
 
 This codebase contains the python scripts for developing the model called PROFIT, proposed in the [paper](https://aclanthology.org/2021.naacl-main.316.pdf) titled "Quantitative Day Trading from Natural Language using Reinforcement Learning".
